@@ -1,0 +1,397 @@
+<!DOCTYPE html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Rli Coffe Shop</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <!-- Navbar -->
+    <header class="navbar">
+      <h1 class="logo">Rili Coffe Shop</h1>
+      <button id="themeToggle">🌙</button>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero">
+      <h2>Nikmati Rasa Kopi dari biji kopi asli</h2>
+      <p>.</p>
+      <a href="#menu" class="btn">Pesan Sekarang</a>
+    </section>
+
+    <div class="filter-bar" style="text-align: center; margin-bottom: 1rem">
+      <label for="categoryFilter">Filter:</label>
+      <select id="categoryFilter">
+        <option value="all">Semua</option>
+        <option value="kopi">Kopi</option>
+        <option value="makanan">Makanan</option>
+        <option value="snack">Snack</option>
+      </select>
+    </div>
+
+    <!-- Menu Section -->
+<section id="menu" class="menu">
+  <h2>Menu Kopi</h2>
+  <div class="menu-grid">
+    <!-- Kopi -->
+    <div class="menu-item" data-category="kopi">
+      <h3>Kopi Arabika</h3>
+      <p>Rp 25.000</p>
+      <button class="add-to-cart-btn">Tambah</button>
+    </div>
+    <div class="menu-item" data-category="kopi">
+      <h3>Kopi Robusta</h3>
+      <p>Rp 22.000</p>
+      <button class="add-to-cart-btn">Tambah</button>
+    </div>
+    <div class="menu-item" data-category="kopi">
+      <h3>Kopi Luwak</h3>
+      <p>Rp 50.000</p>
+      <button class="add-to-cart-btn">Tambah</button>
+    </div>
+    <div class="menu-item" data-category="kopi">
+      <h3>Kopi Duren</h3>
+      <p>Rp 30.000</p>
+      <button class="add-to-cart-btn">Tambah</button>
+    </div>
+    <div class="menu-item" data-category="kopi">
+      <h3>Kopi Hitam</h3>
+      <p>Rp 18.000</p>
+      <button class="add-to-cart-btn">Tambah</button>
+    </div>
+    <div class="menu-item" data-category="kopi">
+      <h3>Es Kopi</h3>
+      <p>Rp 20.000</p>
+      <button class="add-to-cart-btn">Tambah</button>
+    </div>
+    <div class="menu-item" data-category="kopi">
+      <h3>Kopi Latte</h3>
+      <p>Rp 28.000</p>
+      <button class="add-to-cart-btn">Tambah</button>
+    </div>
+    <div class="menu-item" data-category="kopi">
+      <h3>Kopi Mocha</h3>
+      <p>Rp 32.000</p>
+      <button class="add-to-cart-btn">Tambah</button>
+    </div>
+    <div class="menu-item" data-category="kopi">
+      <h3>Kopi Americano</h3>
+      <p>Rp 24.000</p>
+      <button class="add-to-cart-btn">Tambah</button>
+    </div>
+    <div class="menu-item" data-category="kopi">
+      <h3>Kopi Cappuccino</h3>
+      <p>Rp 27.000</p>
+      <button class="add-to-cart-btn">Tambah</button>
+    </div>
+  </div>
+
+  <div class="menu-grid">
+    <!-- Makanan -->
+    <div class="menu-item" data-category="makanan">
+      <h3>Nasi Goreng</h3>
+      <p>Rp20.000</p>
+      <button class="btn add-to-cart">Tambah</button>
+    </div>
+    <div class="menu-item" data-category="makanan">
+      <h3>Mie Goreng</h3>
+      <p>Rp18.000</p>
+      <button class="btn add-to-cart">Tambah</button>
+    </div>
+    <div class="menu-item" data-category="makanan">
+      <h3>Ayam Penyet</h3>
+      <p>Rp25.000</p>
+      <button class="btn add-to-cart">Tambah</button>
+    </div>
+    <div class="menu-item" data-category="makanan">
+      <h3>Soto Ayam</h3>
+      <p>Rp22.000</p>
+      <button class="btn add-to-cart">Tambah</button>
+    </div>
+    <div class="menu-item" data-category="makanan">
+      <h3>Nasi Uduk</h3>
+      <p>Rp19.000</p>
+      <button class="btn add-to-cart">Tambah</button>
+    </div>
+    <div class="menu-item" data-category="makanan">
+      <h3>Sate Ayam</h3>
+      <p>Rp27.000</p>
+      <button class="btn add-to-cart">Tambah</button>
+    </div>
+    <div class="menu-item" data-category="makanan">
+      <h3>Nasi Pecel</h3>
+      <p>Rp17.000</p>
+      <button class="btn add-to-cart">Tambah</button>
+    </div>
+    <div class="menu-item" data-category="makanan">
+      <h3>Rendang</h3>
+      <p>Rp30.000</p>
+      <button class="btn add-to-cart">Tambah</button>
+    </div>
+    <div class="menu-item" data-category="makanan">
+      <h3>Sop Buntut</h3>
+      <p>Rp35.000</p>
+      <button class="btn add-to-cart">Tambah</button>
+    </div>
+    <div class="menu-item" data-category="makanan">
+      <h3>Ikan Bakar</h3>
+      <p>Rp28.000</p>
+      <button class="btn add-to-cart">Tambah</button>
+    </div>
+
+    <!-- Snack -->
+    <div class="menu-item" data-category="snack">
+      <h3>Pisang Goreng</h3>
+      <p>Rp10.000</p>
+      <button class="btn add-to-cart">Tambah</button>
+    </div>
+    <div class="menu-item" data-category="snack">
+      <h3>Tahu Isi</h3>
+      <p>Rp8.000</p>
+      <button class="btn add-to-cart">Tambah</button>
+    </div>
+    <div class="menu-item" data-category="snack">
+      <h3>Bakwan</h3>
+      <p>Rp7.000</p>
+      <button class="btn add-to-cart">Tambah</button>
+    </div>
+    <div class="menu-item" data-category="snack">
+      <h3>Tempe Mendoan</h3>
+      <p>Rp9.000</p>
+      <button class="btn add-to-cart">Tambah</button>
+    </div>
+    <div class="menu-item" data-category="snack">
+      <h3>Kroket</h3>
+      <p>Rp8.000</p>
+      <button class="btn add-to-cart">Tambah</button>
+    </div>
+    <div class="menu-item" data-category="snack">
+      <h3>Risoles</h3>
+      <p>Rp9.000</p>
+      <button class="btn add-to-cart">Tambah</button>
+    </div>
+    <div class="menu-item" data-category="snack">
+      <h3>Cireng</h3>
+      <p>Rp7.000</p>
+      <button class="btn add-to-cart">Tambah</button>
+    </div>
+    <div class="menu-item" data-category="snack">
+      <h3>Lemper</h3>
+      <p>Rp6.000</p>
+      <button class="btn add-to-cart">Tambah</button>
+    </div>
+    <div class="menu-item" data-category="snack">
+      <h3>Donat</h3>
+      <p>Rp10.000</p>
+      <button class="btn add-to-cart">Tambah</button>
+    </div>
+    <div class="menu-item" data-category="snack">
+      <h3>Pastel</h3>
+      <p>Rp8.000</p>
+      <button class="btn add-to-cart">Tambah</button>
+    </div>
+  </div>
+</section>
+
+
+    <!-- Cart Section -->
+    <section class="cart">
+      <h2>Keranjang</h2>
+      <div id="cartItems"></div>
+      <p>Total: <span id="totalPrice">Rp0</span></p>
+      <button id="checkoutBtn" class="btn">Checkout</button>
+    </section>
+
+    <!-- Checkout Form -->
+    <section class="checkout" id="checkoutSection">
+      <h2>Form Pemesanan</h2>
+      <form id="orderForm">
+        <input type="text" id="name" placeholder="Nama Anda" required />
+        <input type="text" id="address" placeholder="Alamat Lengkap" required />
+        <select id="paymentMethod">
+          <option value="COD">COD</option>
+          <option value="Transfer">Transfer Bank</option>
+        </select>
+        <button type="submit" class="btn">Kirim ke WhatsApp</button>
+      </form>
+    </section>
+
+    <script src="script.js"></script>
+
+    <!-- Tentang Kami -->
+    <section class="about">
+      <h2>Tentang Kami</h2>
+      <p>
+        Добро пожаловать в <strong>Rili Coffe Shop</strong> — ваше уютное место,
+        где можно насладиться настоящим ароматом горного кофе. Мы предлагаем
+        только лучшие зерна, выращенные с заботой и страстью. Ощутите вкус
+        природы в каждой чашке!
+      </p>
+    </section>
+
+    <!-- Sosial Media -->
+    <footer class="footer">
+      <div class="socials">
+        <a href="https://facebook.com" target="_blank" title="Facebook">
+          <img
+            src="https://cdn-icons-png.flaticon.com/24/733/733547.png"
+            alt="Facebook"
+          />
+        </a>
+        <a href="https://instagram.com" target="_blank" title="Instagram">
+          <img
+            src="https://cdn-icons-png.flaticon.com/24/733/733558.png"
+            alt="Instagram"
+          />
+        </a>
+        <a href="https://wa.me/62895711060608" target="_blank" title="WhatsApp">
+          <img
+            src="https://cdn-icons-png.flaticon.com/24/733/733585.png"
+            alt="WhatsApp"
+          />
+        </a>
+      </div>
+      <p class="address">📍 Alamat:perumahan cibarusah indah</p>
+      <p id="openStatus" style="text-align: center; font-weight: bold"></p>
+    </footer>
+    <!-- Peta Lokasi -->
+    <section class="map-section">
+      <h2>Lokasi Kami</h2>
+      <div id="map"></div>
+    </section>
+    <!-- Leaflet CSS & JS (CDN) -->
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"
+    />
+    <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+
+    <script>
+      // Inisialisasi peta dengan koordinat (misalnya Bandung)
+      const map = L.map("map").setView([-6.90389, 107.61861], 15); // Koordinat Bandung
+
+      // Tambahkan layer OpenStreetMap
+      L.tileLayer("https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png", {
+        attribution:
+          '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors',
+      }).addTo(map);
+
+      // Tambahkan marker lokasi Kopi Gunung
+      L.marker([-6.4309976765547985, 107.07874632111614])
+        .addTo(map)
+        .bindPopup(
+          "<b>Rili Coffe SHOP</b><br>Alamat: Perumahan Cibarusah Indah"
+        )
+        .openPopup();
+    </script>
+    <script>
+      function checkOpenStatus() {
+        const now = new Date();
+        const hour = now.getHours();
+        const statusEl = document.getElementById("openStatus");
+
+        const buka = 8; // buka jam 8
+        const tutup = 20; // tutup jam 20
+
+        if (hour >= buka && hour < tutup) {
+          statusEl.textContent = "🟢 Kami sedang BUKA (08:00–22:00)";
+          statusEl.style.color = "green";
+        } else {
+          statusEl.textContent = "🔴 Saat ini TUTUP (Buka 08:00–22:00)";
+          statusEl.style.color = "red";
+        }
+      }
+
+      document.addEventListener("DOMContentLoaded", checkOpenStatus);
+    </script>
+    <script>
+      document
+        .getElementById("categoryFilter")
+        .addEventListener("change", function () {
+          const selected = this.value;
+          const items = document.querySelectorAll(".menu-item");
+
+          items.forEach((item) => {
+            const category = item.getAttribute("data-category");
+            if (selected === "all" || category === selected) {
+              item.style.display = "block";
+            } else {
+              item.style.display = "none";
+            }
+          });
+        });
+    </script>
+    <script>
+      document
+        .getElementById("orderForm")
+        .addEventListener("submit", function (e) {
+          e.preventDefault();
+
+          const name = document.getElementById("name").value.trim();
+          const address = document.getElementById("address").value.trim();
+
+          if (name.length < 3 || address.length < 5) {
+            alert("Silakan isi nama dan alamat dengan benar.");
+            return;
+          }
+
+          // ...lanjutkan pemesanan via WhatsApp
+        });
+    </script>
+    
+<script>
+  const cart = [];
+
+  function updateCartUI() {
+    const cartItems = document.getElementById("cartItems");
+    const totalPriceEl = document.getElementById("totalPrice");
+    cartItems.innerHTML = "";
+    let total = 0;
+
+    cart.forEach((item, i) => {
+      total += item.price;
+
+      const div = document.createElement("div");
+      div.className = "cart-item";
+      div.innerHTML = <span>${item.name}</span><span>Rp${item.price.toLocaleString()}</span>;
+      cartItems.appendChild(div);
+    });
+
+    totalPriceEl.textContent = Rp${total.toLocaleString()};
+  }
+
+  document.querySelectorAll(".add-to-cart").forEach(btn => {
+    btn.addEventListener("click", () => {
+      const name = btn.getAttribute("data-name");
+      const price = parseInt(btn.getAttribute("data-price"));
+      cart.push({ name, price });
+      updateCartUI();
+    });
+  });
+</script>
+
+</script>
+>
+  <h2>Form Pemesanan</h2>
+  <input type="text" id="name" placeholder="Nama Anda" required minlength="3" />
+  <input type="text" id="address" placeholder="Alamat Lengkap" required minlength="5" />
+  <input type="text" id="phone" placeholder="Nomor Telepon" required pattern="[0-9]{10,15}" />
+  <input type="email" id="email" placeholder="Email (opsional)" />
+  <select id="paymentMethod">
+    <option value="COD">COD</option>
+    <option value="Transfer">Transfer Bank</option>
+  <button type="submit">Kirim</button>
+</div>
+    <script>
+      document.getElementById("themeToggle").addEventListener("click", function () {
+        document.body.classList.toggle("dark-theme");
+        this.textContent = document.body.classList.contains("dark-theme")
+          ? "☀"
+          : "🌙";
+      });
+    </script>  
+
+  </body>
+  
+</html>
